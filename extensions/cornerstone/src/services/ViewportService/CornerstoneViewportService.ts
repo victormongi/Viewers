@@ -260,6 +260,7 @@ class CornerstoneViewportService extends PubSubService
     const {
       viewportOptions,
       displaySetOptions,
+      categories,
     } = this._getViewportAndDisplaySetOptions(
       publicViewportOptions,
       publicDisplaySetOptions,
@@ -283,6 +284,7 @@ class CornerstoneViewportService extends PubSubService
         background,
         orientation,
       },
+      categories,
     };
 
     // Todo: this is not optimal at all, we are re-enabling the already enabled

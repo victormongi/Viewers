@@ -96,6 +96,7 @@ const ptAXIAL = {
       // index: 5,
       preset: 'first', // 'first', 'last', 'middle'
     },
+    categories: ['ptMip'],
     syncGroups: [
       {
         type: 'cameraPosition',
@@ -137,6 +138,7 @@ const ptSAGITTAL = {
     orientation: 'sagittal',
     background: [1, 1, 1],
     toolGroupId: 'ptToolGroup',
+    categories: ['ptMip'],
     syncGroups: [
       {
         type: 'cameraPosition',
@@ -178,6 +180,7 @@ const ptCORONAL = {
     orientation: 'coronal',
     background: [1, 1, 1],
     toolGroupId: 'ptToolGroup',
+    categories: ['ptMip'],
     syncGroups: [
       {
         type: 'cameraPosition',

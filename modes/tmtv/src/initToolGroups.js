@@ -114,6 +114,7 @@ function _initToolGroups(toolNames, Enums, toolGroupService, commandsManager) {
     },
     [toolNames.MipJumpToClick]: {
       targetViewportIds: ['ptAXIAL', 'ptCORONAL', 'ptSAGITTAL'],
+      category: 'ptMip',
     },
   };
 

@@ -25,6 +25,7 @@ export type ViewportOptions = {
   orientation?: Enums.OrientationAxis;
   background?: Types.Point3;
   syncGroups?: SyncGroup[];
+  categories?: string[];
   initialImageOptions?: InitialImageOptions;
   customViewportProps?: Record<string, unknown>;
   /*
@@ -43,6 +44,7 @@ export type PublicViewportOptions = {
   orientation?: Enums.OrientationAxis;
   background?: Types.Point3;
   syncGroups?: SyncGroup[];
+  categories?: string[];
   initialImageOptions?: InitialImageOptions;
   customViewportProps?: Record<string, unknown>;
   allowUnmatchedView?: boolean;
@@ -216,6 +218,7 @@ class ViewportInfo {
     const {
       toolGroupId = DEFAULT_TOOLGROUP_ID,
       presentationIds,
+      categories,
     } = viewportOptionsEntry;
     let orientation;
 
@@ -243,6 +246,7 @@ class ViewportInfo {
       orientation,
       toolGroupId,
       presentationIds,
+      categories,
     });
   }
 
